@@ -1,0 +1,23 @@
+{
+  "window.zoomLevel": 1,
+  "files.autoSave": "afterDelay",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.codeCompletion": "rcodetools",
+  "solargraph.commandPath": "/Users/kirill-tatchihin/.rvm/gems/ruby-2.4.1/bin/solargraph",
+  "ruby.lint": {
+  "rubocop": {
+      "lint": true,
+      "rails": true
+      }
+  },
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Monaco, Monaco, 'Courier New', monospace",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "showMusicMetrics": false,
+  "showGitMetrics": false,
+  "showWeeklyRanking": false,
+  "workbench.editor.showTabs": true,
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "GitHub Plus"
+}
