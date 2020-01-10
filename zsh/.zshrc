@@ -65,11 +65,12 @@ ZSH_THEME="robbyrussell"
 plugins=(
     rails
     ruby
-  git
+    git
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
-
+source /Users/kirill-tatchihin/.gvm/scripts/gvm
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -123,3 +124,4 @@ export PATH=/Users/kirill-tatchihin/Library/Python/2.7/bin:$PATH
 export PATH=~/.local/bin:$PATH
 export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
 alias huyak="git push origin"
+
