@@ -1,0 +1,60 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Plugins list:
+Plugin 'scrooloose/nerdtree'
+Plugin 'jreybert/vimagit'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'ruby-matchit'
+Plugin 'ycm-core/YouCompleteMe'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-rails'
+Plugin 'fatih/vim-go'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'wincent/command-t'
+Plugin 'jparise/vim-graphql'
+
+" Colorchemes:
+Plugin 'croaker/mustang-vim'
+Plugin 'colepeters/spacemacs-theme.vim'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+syntax on
+set number
+set laststatus=2
+set incsearch
+set nohlsearch
+set showcmd
+set showmode
+set ruler
+
+" colorcheme config
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+set background=dark
+colorscheme spacemacs-theme 
+let g:ycm_use_clangd=0
+
