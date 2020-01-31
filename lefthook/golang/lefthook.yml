@@ -1,0 +1,18 @@
+pre-commit:
+  parallel: true
+  commands:
+    govet:
+      tags: backend style
+      run: go vet ./...
+    gofmt:
+      tags: backend style
+      run: golint ./...
+    terraformfmt:
+      tags: backend style
+      glob: '**/*.tf'
+      run: terraform fmt | xargs git add
+pre-push:
+  parallel: true
+  scripts:
+    "coverage":
+      runner: bash
